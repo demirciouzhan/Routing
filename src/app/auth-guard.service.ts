@@ -20,7 +20,7 @@ constructor(private authService: AuthService,private router:Router){}
 .then(
     (authenticated: boolean)=>{
         if(authenticated){
-            return false;
+            return true;
         }else {
         this.router.navigate(['/']);
         }
